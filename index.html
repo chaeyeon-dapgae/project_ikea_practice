@@ -4,8 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ikea</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="static/common.css">
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(function(){
+      $('#header').load('includes/header.html');
+      $('#footer').load('includes/footer.html');
+    })
+  </script>
 </head>
 <body>
-  
+  <div class="container">
+    <!-- ########## header ########## -->
+    <div id="header"></div>
+    <!-- ########## Full Screen ########## -->
+    <main>
+      <p>헤더, 푸터 제외한 영역 작성시작</p>
+    </main>
+    <!-- ########## footer ########## -->
+    <div id="footer"></div>
+  </div>
+  <!-- ########## script ########## -->
+  <script src="static/location.js"></script>
+  <script src="static/store.js"></script>
+  <script src="static/new.js"></script>
+  <script src="static/product.js"></script>
+
+  <script src="static/main.js"></script>
 </body>
 </html>
+
