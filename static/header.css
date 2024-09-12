@@ -1,8 +1,7 @@
 #headerWrap {
-  border: 1px solid #000;
+  box-shadow: 0 0 10px #000;
 }
 #headerWrap header {
-  border: 1px solid #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,12 +13,9 @@ header .logo h1 {
   font-size: 0;
   line-height: 0;
 }
-header .logo a {
-}
-.lnb {
-}
-.lnb ul {
-}
+header .logo a {}
+.lnb {}
+.lnb ul {}
 .lnb li {
   float: left;
   margin-left: 10px;
