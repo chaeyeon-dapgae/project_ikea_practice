@@ -1,0 +1,36 @@
+#headerWrap {
+  border: 1px solid #000;
+}
+#headerWrap header {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .logo {
+}
+header .logo h1 {
+  font-size: 0;
+  line-height: 0;
+}
+header .logo a {
+}
+.lnb {
+}
+.lnb ul {
+}
+.lnb li {
+  float: left;
+  margin-left: 10px;
+}
+.lnb li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555;
+  transition: 0.35s;
+  padding: 5px;
+}
+.lnb li a:hover {
+  color: #222;
+}
