@@ -9,21 +9,33 @@
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script>
     $(function(){
-      $('#header').load('includes/header.html');
-      $('#footer').load('includes/footer.html');
+      $('#headerWrap').load('includes/header.html');
+      $('#footerWrap').load('includes/footer.html');
     })
   </script>
 </head>
 <body>
-  <div class="container">
+  <div class="fsWrap">
     <!-- ########## header ########## -->
-    <div id="header"></div>
-    <!-- ########## Full Screen ########## -->
-    <main>
-      <p>헤더, 푸터 제외한 영역 작성시작</p>
-    </main>
+    <div id="headerWrap"></div>
+    <!-- ########## main ########## -->
+    <div id="mnWrap">
+      <main></main>
+    </div>
+    <!-- ########## best-product ########## -->
+    <div id="bestPd"></div>
+    <!-- ########## banner - vision ########## -->
+    <div id="vision"></div>
+    <!-- ########## new-product ########## -->
+    <div id="newPd"></div>
+    <!-- ########## banner - idea ########## -->
+    <div id="idea"></div>
+    <!-- ########## event ########## -->
+    <div id="event"></div>
+    <!-- ########## md's pick ########## -->
+    <div id="mdPd"></div>
     <!-- ########## footer ########## -->
-    <div id="footer"></div>
+    <div id="footerWrap"></div>
   </div>
   <!-- ########## script ########## -->
   <script src="static/location.js"></script>
