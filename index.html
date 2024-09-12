@@ -6,38 +6,52 @@
   <title>Ikea</title>
   <link rel="stylesheet" href="static/style.css">
   <link rel="stylesheet" href="static/common.css">
+  <!-- jquery CDN -->
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script>
-    $(function(){
-      $('#headerWrap').load('includes/header.html');
-      $('#footerWrap').load('includes/footer.html');
-    })
-  </script>
+
 </head>
 <body>
   <div class="fsWrap">
     <!-- ########## header ########## -->
     <div id="headerWrap"></div>
     <!-- ########## main ########## -->
-    <div id="mnWrap">
-      <main></main>
+    <div id="main-wrap">
+      <main class="cnt-inner"></main>
     </div>
     <!-- ########## best-product ########## -->
-    <div id="bestPd"></div>
+    <div id="best-pd-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## banner - vision ########## -->
-    <div id="vision"></div>
+    <div id="vision-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## new-product ########## -->
-    <div id="newPd"></div>
+    <div id="new-pd-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## banner - idea ########## -->
-    <div id="idea"></div>
+    <div id="idea-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## event ########## -->
-    <div id="event"></div>
+    <div id="event-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## md's pick ########## -->
-    <div id="mdPd"></div>
+    <div id="md-pick-wrap">
+      <div class="cnt-inner"></div>
+    </div>
     <!-- ########## footer ########## -->
     <div id="footerWrap"></div>
   </div>
   <!-- ########## script ########## -->
+  <script>
+    $(function(){
+      $('#headerWrap').load('includes/header.html');
+      $('#footerWrap').load('includes/footer.html');
+    })
+  </script>
   <script src="static/location.js"></script>
   <script src="static/store.js"></script>
   <script src="static/new.js"></script>
