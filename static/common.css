@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  line-height: 1.6em;
+  color: #222;
+}
 a {
   text-decoration: none;
   color: #222;
@@ -13,4 +18,14 @@ ul, ol, li {
   margin: 0;
   list-style: none;
   padding: 0;
+}
+
+/* ########## width ########## */
+.cnt-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ########## 각 컨텐츠 header 중앙 정렬 ########## */
+.cnt-inner header {
+  text-align: center;
 }
