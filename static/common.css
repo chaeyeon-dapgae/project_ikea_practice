@@ -24,6 +24,8 @@ ul, ol, li {
 .cnt-inner {
   max-width: 1200px;
   margin: 0 auto;
+  /* 반응형 작업 시 주석 해제 */
+  /* padding: 0 10px;  */
 }
 /* ########## 각 컨텐츠 header 중앙 정렬 ########## */
 .cnt-inner header {
