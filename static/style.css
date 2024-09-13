@@ -1,0 +1,58 @@
+/* index.css */
+/* ########## main ########## */
+#main-wrap {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+main {}
+main .text {}
+main .text h1 {
+  color: #637e76;
+  text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
+  line-height: 50px;
+}
+main .text p {
+  margin-top: 50px;
+}
+main .text a {
+  display: block;
+  margin-top: 25px;
+}
+main .text a i {
+  margin-left: 10px;
+}
+main img {
+  border: 1px solid #000;
+}
+/* ########## best-product ########## */
+.best-pd {}
+.best-pd section {
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+.best-pd article {
+  height: 500px;
+  width: 33.3333%;
+  position: relative;
+}
+.best-pd .text {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.best-pd .text p {
+  text-align: left;
+  margin-top: 50px;
+}
+/* ########## banner - vision ########## */
+/* ########## new-product ########## */
+/* ########## banner - idea ########## */
+/* ########## event ########## */
+/* ########## md's pick ########## */
+/* ########## service ########## */
