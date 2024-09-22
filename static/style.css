@@ -82,7 +82,6 @@ main img {
   text-align: center;
 }
 /* ########## new-product ########## */
-.new-pd {}
 .new-pd section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -123,6 +122,34 @@ main img {
   width: 100%;
 }
 /* ########## banner - idea ########## */
+#idea-wrap {
+  background-color: #ddd;
+}
+.idea {
+  display: flex;
+  gap: 20px;
+}
+.idea .text {
+  padding: 0 50px;
+  text-align: center;
+  display: grid;
+  align-content: center;
+}
+.idea section {
+  margin-top: 20px;
+}
+.idea section a {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 100px;
+  line-height: 40px;
+}
+.idea img {
+  width: 50%;
+}
 /* ########## event ########## */
 /* ########## md's pick ########## */
 /* ########## service ########## */
