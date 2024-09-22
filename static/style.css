@@ -184,5 +184,11 @@ main img {
 .event .text h5 {
   margin-bottom: 20px;
 }
+.event .text p {
+  margin-top: 10px;
+}
+.event .text p:first-child {
+  margin-top: 0;
+}
 /* ########## md's pick ########## */
 /* ########## service ########## */
