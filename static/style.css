@@ -151,5 +151,38 @@ main img {
   width: 50%;
 }
 /* ########## event ########## */
+.event article {
+  display: flex;
+  gap: 20px;
+}
+.event .imgGroup {
+  width: 60%;
+  position: relative;
+  height: 900px;
+}
+.event .imgGroup img {
+  width: 60%;
+  vertical-align: middle;
+}
+.event .imgGroup img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.event .imgGroup img:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.event .text {
+  width: 40%;
+  display: grid;
+  align-content: end;
+  padding-left: 20px;
+}
+.event .text h5 {
+  margin-bottom: 20px;
+}
 /* ########## md's pick ########## */
 /* ########## service ########## */
