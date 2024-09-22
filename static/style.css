@@ -3,8 +3,13 @@
 #main-wrap {
   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-main {}
-main .text {}
+main {
+  position: relative;
+}
+main .text {
+  width: 70%;
+  margin: 0 auto;
+}
 main .text h1 {
   color: #637e76;
   text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.2);
@@ -21,7 +26,10 @@ main .text a i {
   margin-left: 10px;
 }
 main img {
-  border: 1px solid #000;
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  width: 20%;
 }
 /* ########## best-product ########## */
 .best-pd {}
@@ -35,6 +43,10 @@ main img {
   width: 33.3333%;
   position: relative;
 }
+.best-pd article img {
+  position: absolute;
+  width: 100%;
+}
 .best-pd .text {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -45,13 +57,71 @@ main img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: -1;
 }
 .best-pd .text p {
   text-align: left;
   margin-top: 50px;
 }
 /* ########## banner - vision ########## */
+#vision-wrap {
+  background: url('../img/pic4.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.vision header h3 {
+  font-size: 26px;
+  text-shadow: 2px 2px 10px #000;
+}
+.vision section {
+  margin-top: 25px;
+}
+.vision section p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
 /* ########## new-product ########## */
+.new-pd {}
+.new-pd section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.new-pd article {
+  display: flex;
+  height: 200px;
+}
+.new-pd article .text {
+  padding: 20px;
+  width: 50%;
+}
+.new-pd article .text h5 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.new-pd article a {
+  width: 50%;
+}
+.new-pd article img {
+  vertical-align: middle;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.new-pd article:nth-child(1) {
+  grid-row: 1 / span 2;
+  height: auto;
+}
+.new-pd article:nth-child(1) a {
+  width: 100%;
+}
+.new-pd article:nth-child(1) a img {
+  height: 400px;
+}
+.new-pd article:nth-child(5) a {
+  width: 100%;
+}
 /* ########## banner - idea ########## */
 /* ########## event ########## */
 /* ########## md's pick ########## */
