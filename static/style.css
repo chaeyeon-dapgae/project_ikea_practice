@@ -22,8 +22,12 @@ main .text a {
   display: block;
   margin-top: 25px;
 }
+main .text a:hover i {
+  transform: rotate(90deg);
+}
 main .text a i {
   margin-left: 10px;
+  transition: 0.35s;
 }
 main img {
   position: absolute;
