@@ -246,3 +246,39 @@ main img {
   grid-column: 2;
 }
 /* ########## service ########## */
+.service {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+.service article {
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  border-right: 2px solid #333;
+}
+.service article:last-child {
+  border: none;
+}
+.service article p {
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.service article p::before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  height: 2px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  transition: 0.35s;
+}
+.service article p:hover::before {
+  width: 90%;
+}
+.service article i {
+  margin-right: 10px;
+}
