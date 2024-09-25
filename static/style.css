@@ -133,7 +133,6 @@ main img {
 }
 .new-pd article:nth-child(1) {
   grid-row: 1 / span 2;
-  height: auto;
 }
 .new-pd article:nth-child(1) a {
   width: 100%;
@@ -235,9 +234,6 @@ main img {
 }
 .md-pick article {
   height: 300px;
-}
-.md-pick article a {
-  width: 50%;
 }
 .md-pick article a img {
   width: 100%;
@@ -453,5 +449,87 @@ main img {
   /* ########## service ########## */
   .service article p:hover::before {
     width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  /* ########## main ########## */
+  main .text {
+    width: 100%;
+  }
+  main img {
+    display: none;
+  }
+  /* ########## best-product ########## */
+  .best-pd article {
+    width: 100%;
+    height: 400px;
+  }
+  /* ########## new-product ########## */
+  .new-pd section {
+    display: block;
+  }
+  .new-pd article .text {
+    padding: 10px;
+    width: 60%;
+  }
+  .new-pd article:nth-child(1) a img,
+  .new-pd article:nth-child(5) a img {
+    height: 250px;
+  }
+  /* ########## banner - idea ########## */
+  .idea .text {
+    padding: 0;
+  }
+  /* ########## event ########## */
+  .event .imgGroup {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .event .imgGroup img {
+    width: calc((100% - 20px) / 3);
+  }
+  .event .imgGroup img:nth-child(2) {
+    margin-top: 50px;
+  }
+  .event .imgGroup img:nth-child(3) {
+    margin-top: 100px;
+  }
+  .event .text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  /* ########## md's pick ########## */
+  .md-pick article .text {
+    width: 100%;
+    padding: 20px;
+  }
+  .md-pick article:nth-child(1) {
+    flex-direction: column;
+    height: auto;
+  }
+  .md-pick article:nth-child(1) img {
+    width: 100%;
+    height: 300px;
+  }
+  /* ########## service ########## */
+  .service {
+    display: block;
+  }
+  .service article {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid #eee;
+  }
+  .service article:nth-child(3) {
+    border-bottom: 2px solid #eee;
+  }
+  .service article:last-child {
+    border: none;
+  }
+  .service article p:hover::before {
+    width: 60%;
   }
 }
