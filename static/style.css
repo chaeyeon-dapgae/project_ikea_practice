@@ -167,6 +167,11 @@ main img {
   padding: 0 20px;
   border-radius: 100px;
   line-height: 40px;
+  transition: 0.35s;
+}
+.idea section a:hover {
+  background-color: #fff;
+  color: #000;
 }
 .idea img {
   width: 50%;
@@ -289,7 +294,7 @@ main img {
 .service article p::before {
   content: '';
   position: absolute;
-  background-color: #000;
+  background-color: #aaa;
   height: 2px;
   top: 100%;
   left: 50%;
