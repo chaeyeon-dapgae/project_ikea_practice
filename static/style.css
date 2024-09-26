@@ -241,7 +241,7 @@ main img {
   height: 100%;
   object-fit: cover;
 }
-.md-pick article .text {
+.md-pick article:nth-child(1) .text {
   background-color: #fff;
   width: 50%;
   display: grid;
@@ -256,6 +256,9 @@ main img {
   gap: 20px;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+.md-pick article:nth-child(1) a {
+  width: 50%;
 }
 .md-pick article:nth-child(2) {
   grid-column: 3 / span 2;
@@ -509,8 +512,14 @@ main img {
     flex-direction: column;
     height: auto;
   }
-  .md-pick article:nth-child(1) img {
+  .md-pick article:nth-child(1) .text {
     width: 100%;
+    padding: 20px;
+  }
+  .md-pick article:nth-child(1) a {
+    width: 100%;
+  }
+  .md-pick article:nth-child(1) img {
     height: 300px;
   }
   /* ########## service ########## */
