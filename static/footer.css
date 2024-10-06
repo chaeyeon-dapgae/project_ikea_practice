@@ -35,6 +35,9 @@ footer .heading .logo a img {
   font-size: 18px;
   margin-right: 10px;
 }
+.sns a:last-child {
+  margin-right: 0;
+}
 footer section {
   display: flex;
   gap: 20px;
@@ -44,7 +47,6 @@ footer section {
 }
 footer article {
   width: calc((100% - 60px) / 4);
-  border: 1px solid #000;
 }
 footer article h5 {
   font-size: 20px;
@@ -56,4 +58,60 @@ footer article li {
 }
 footer article li a {
   color: #666;
+}
+@media (max-width: 920px) {
+  footer .heading {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer section {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  footer article {
+    width: 100%;
+    padding: 10px 0;
+  }
+  footer article h5 {
+    margin: 0;
+    border-bottom: 1px solid white;
+    padding: 0 20px 10px 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  footer article h5:before,
+  footer article h5:after {
+    content: '';
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    width: 15px;
+    background-color: #fff;
+    height: 3px;
+    top: 50%;
+    right: 20px;
+  }
+  footer article h5:before {
+    transform: rotate(90deg);
+    transition: 0.35s;
+  }
+  footer article ul {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    padding: 0;
+    transition: height 0.35s;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer article.focus ul {
+    height: 100%;
+    padding: 20px 30px;
+  }
+  footer article.focus h5:before {
+    transform: rotate(0deg);
+  }
 }
