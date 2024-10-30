@@ -1,0 +1,82 @@
+/* ########## product ########## */
+#product-wrap {
+  padding-top: 100px;
+}
+.product section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.product .imgView {
+  width: calc((100% - 20px) / 2);
+}
+.product .bigImg img {
+  width: 80%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.product .thumbImg {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.product .thumbImg img {
+  width: calc((100% - 40px) / 3);
+}
+.product .texts {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product .texts h3 {
+  margin: 25px 0;
+}
+.product .btns {
+  display: flex;
+  margin: 50px 0;
+  gap: 20px;
+}
+.product .btns button {
+  background: #000;
+  color: #fff;
+  border-radius: 50px;
+  line-height: 30px;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product .btns button:active {
+  transform: scale(0.7);
+}
+.product .btns .hrt {
+  border: 1px solid #000;
+  border-radius: 50px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+/* 찜하기 기능 */
+.product .btns .hrt.on {
+  border: 1px solid salmon;
+  color: salmon;
+}
+.pdService div {
+  display: flex;
+  gap: 20px;
+  line-height: 20px;
+}
+.pdService div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.stock {
+  margin-top: 15px;
+}
