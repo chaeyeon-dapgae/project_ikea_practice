@@ -77,7 +77,8 @@ footer article li a {
   footer article h5 {
     margin: 0;
     border-bottom: 1px solid white;
-    padding: 0 20px 10px 20px;
+    /* padding: 0 20px 10px 20px; */
+    padding: 20px 0;
     position: relative;
     cursor: pointer;
   }
@@ -98,18 +99,19 @@ footer article li a {
     transition: 0.35s;
   }
   footer article ul {
-    height: 0;
-    overflow: hidden;
-    border-bottom: 1px solid white;
+    max-height: 0;
     padding: 0;
-    transition: height 0.35s;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    overflow: hidden;
+    transition: 0.35s;
+  }
+  footer article ul li {
+    margin: 7px;
   }
   footer article.focus ul {
-    height: 100%;
-    padding: 20px 30px;
+    max-height: 100vh;
+    /* padding: 20px 30px; */
   }
   footer article.focus h5:before {
     transform: rotate(0deg);
