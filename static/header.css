@@ -5,8 +5,8 @@
   left: 0;
   width: 100%;
   z-index: 10000;
-  /* background-color: #fff; */
   background-color: transparent;
+  transition: 0.35s;
 }
 #headerWrap.on {
   background-color: #fff;
@@ -18,15 +18,10 @@
   height: 80px;
   padding: 0 10px;
 }
-header .logo {
-}
 header .logo h1 {
   font-size: 0;
   line-height: 0;
 }
-header .logo a {}
-.lnb {}
-.lnb ul {}
 .lnb li {
   float: left;
   margin-left: 10px;
@@ -51,7 +46,6 @@ header .menu {
     width: 100%;
     top: -288px;
     right: 0;
-    /* background-color: #fff; */
     overflow: hidden;
     z-index: -1;
     transition: 0.5s;
@@ -114,7 +108,6 @@ header .menu {
   header .menu span:nth-child(3) {
     bottom: 0;
   }
-  header .menu.focus span {}
   header .menu.focus span:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);

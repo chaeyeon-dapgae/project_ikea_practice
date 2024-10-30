@@ -11,7 +11,8 @@ menuList.addEventListener("click", function () {
   menuList.classList.remove("focus");
 });
 
-const headerWrap = document.querySelector("#headerWrap");
+let headerWrap = document.querySelector("#headerWrap");
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     headerWrap.classList.add("on");

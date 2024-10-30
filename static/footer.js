@@ -1,10 +1,3 @@
-// let footerList = document.querySelectorAll("footer article");
-
-// function footerListItem (item) {
-//   console.log(this, item)
-// }
-// footerList.forEach(footerListItem)
-
 const footerList = document.querySelectorAll("footer article");
 
 
