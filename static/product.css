@@ -187,3 +187,41 @@ body {
   text-align: right;
   margin-left: auto;
 }
+/* ########## ingredient ########## */
+.ingredient {}
+.ingredient section {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+.ingredient section article {
+  width: calc((100% - calc(20px * 3)) / 4);
+}
+.ingredient section .ingredient-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ingredient article:nth-child(1) .ingredient-image {
+  background-image: url(../img/product/pic19.jpg);
+}
+.ingredient article:nth-child(2) .ingredient-image {
+  background-image: url(../img/product/pic10.jpg);
+}
+.ingredient article:nth-child(3) .ingredient-image {
+  background-image: url(../img/product/pic11.jpg);
+}
+.ingredient article:nth-child(4) .ingredient-image {
+  background-image: url(../img/product/pic29.jpg);
+}
+.ingredient section article .text {
+  text-align: center;
+  margin-top: 20px;
+}
+.ingredient section article .text h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
