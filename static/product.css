@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* ########## product ########## */
 #product-wrap {
   padding-top: 100px;
@@ -26,6 +29,7 @@
 }
 .product .thumbImg img {
   width: calc((100% - 40px) / 3);
+  cursor: pointer;
 }
 .product .texts {
   width: calc((100% - 20px) / 2);
@@ -79,4 +83,107 @@
 }
 .stock {
   margin-top: 15px;
+}
+/* ########## banner - img ########## */
+.banner-img {
+  background: url(../img/product/pic05.jpg) no-repeat center bottom / cover;
+  height: 200px;
+}
+/* ########## detail ########## */
+.detail {
+  position: relative;
+}
+.detail:after {
+  content: 'IKEA';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 16rem;
+  color: #f7f7f7;
+  line-height: 0.7em;
+  font-weight: 700;
+  z-index: -1;
+}
+.detail section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, minmax(30vh, auto));
+  gap: 20px;
+}
+.detail section article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail section article:first-child {
+  margin-bottom: 40px;
+}
+.detail section article:first-child,
+.detail section article:last-child {
+  grid-column: 1 / span 3;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.detail section article:first-child img,
+.detail section article:last-child img {
+  width: 50%;
+}
+.detail section article .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.detail section article .text h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.detail section article .text p {
+  margin-top: 20px;
+}
+.detail section article .text h5 {
+  margin-top: 60px;
+  font-size: 20px;
+}
+.detail section article:last-child .text {
+  margin-left: 100px;
+}
+.detail section article:last-child p {
+  margin-top: 0;
+  color: #777;
+}
+.detail section article:last-child p span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.detail .howto {
+  margin-top: 40px;
+}
+.detail h4 {
+  margin-bottom: 20px;
+}
+.detail .docs p {
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+/* ########## banner - slogan ########## */
+#slogan-wrap {
+  background: url(../img/product/pic20.jpg) no-repeat center center / cover;
+  background-attachment: fixed;
+}
+.slogan {
+  padding: 60px;
+}
+.slogan header {
+  text-align: left;
+  width: 60%;
+}
+.slogan header h3 {
+  font-size: 24px;
+}
+.slogan section {
+  width: 60%;
+  text-align: right;
+  margin-left: auto;
 }
