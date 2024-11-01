@@ -188,7 +188,6 @@ body {
   margin-left: auto;
 }
 /* ########## ingredient ########## */
-.ingredient {}
 .ingredient section {
   display: flex;
   gap: 20px;
@@ -224,4 +223,19 @@ body {
 .ingredient section article .text h4 {
   font-size: 20px;
   margin-bottom: 10px;
+}
+/* ########## lookGood ########## */
+.lookGood section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.lookGood section article:first-child {
+  grid-column: 1 / span 2;
+}
+.lookGood section article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
