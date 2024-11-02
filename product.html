@@ -59,7 +59,7 @@
               <div class="btns">
                 <button>장바구니 넣기 및 주문하기</button>
                 <div class="hrt">
-                  <i class="fa fa-heart"></i>
+                  <i class="fa fa-heart-o"></i>
                 </div>
               </div>
               <div class="pdService">
@@ -281,6 +281,32 @@
         $("#headerWrap").load("includes/header.html");
         $("#footerWrap").load("includes/footer.html");
       });
+
+      // ########## product ##########
+      let bigImg = document.querySelector(".bigImg > img");
+      let thumbImg = document.querySelectorAll(".thumbImg > img");
+      for (let i = 0; i < thumbImg.length; i++) {
+        thumbImg[i].addEventListener('click', function () {
+          let basicSrc = bigImg.src;
+          let basicAlt = bigImg.alt;
+          bigImg.src = thumbImg[i].src;
+          bigImg.alt = thumbImg[i].alt;
+          thumbImg[i].src = basicSrc;
+          thumbImg[i].alt = basicAlt;
+          basicSrc = thumbImg[i].src;
+          basicAlt = thumbImg[i].alt;
+        })
+      }
+      let hrtBtn = document.querySelector('.hrt');
+      hrtBtn.addEventListener("click", function() {
+        this.classList.toggle('on');
+        if(this.classList.contains('on')) {
+          this.innerHTML = '<i class="fa fa-heart"></i>';
+        } else {
+          this.innerHTML = '<i class="fa fa-heart-o"></i>';
+        }
+      })
+
     </script>
     <script src="static/location.js"></script>
     <script src="static/store.js"></script>
