@@ -1,0 +1,56 @@
+/* ########## main-new ##########  */
+.main-new main {
+  padding: 60px 0;
+  position: relative;
+}
+.main-new main img {
+  width: 70%;
+}
+.main-new main .text {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.main-new .text p {
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+.view-more a {
+  font-weight: 700;
+}
+/* ########## banner-traditional ##########  */
+#traditional-wrap {
+  background-color: #C5B9AB;
+}
+.traditional section {
+  display: flex;
+  gap: 20px;
+}
+.traditional article {
+  width: calc((100% - (20px * 3)) / 4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.traditional .text {
+  background-color: #EEEAE6;
+  padding: 0 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.traditional .text p {
+  margin-top: 20px;
+}
+.traditional img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
