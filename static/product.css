@@ -63,6 +63,7 @@
   width: 30px;
   text-align: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 /* 찜하기 기능 */
 .product .btns .hrt.on {
