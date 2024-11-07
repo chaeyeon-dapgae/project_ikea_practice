@@ -94,14 +94,14 @@
 .new .text p {
   margin: 20px 0;
 }
-.new article:nth-child(even) {
+.second-new {
   margin-top: 100px;
   flex-direction: row-reverse;
 }
-.new article:nth-child(even) .thumbImg {
+.second-new .thumbImg {
   left: calc(-100% - 20px);
 }
-.new article:nth-child(even) .text {
+.second-new .text {
   text-align: right;
 }
 .new .text a {
@@ -194,7 +194,7 @@
   .new .text p {
     width: 70%;
   }
-  .new article:nth-child(even) .text {
+  .second-new .text {
     text-align: left;
   }
   .new .text a {
