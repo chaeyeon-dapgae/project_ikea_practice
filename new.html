@@ -69,7 +69,7 @@
             <h3>new product</h3>
           </header>
           <section>
-            <article>
+            <article class="first-new">
               <div class="imgGroup">
                 <div class="bigImg">
                   <img src="./img/new/pic05.jpg" alt="BAGGEBO 바게보 유리도어 수납장 메탈 화이트" />
@@ -90,7 +90,7 @@
                 <a href="#none">view more</a>
               </div>
             </article>
-            <article>
+            <article class="second-new">
               <div class="imgGroup">
                 <div class="bigImg">
                   <img src="img/new/pic08.jpg" alt="BLÅKULLEN 블로쿨렌" />
@@ -168,6 +168,39 @@
         $("#headerWrap").load("includes/header.html");
         $("#footerWrap").load("includes/footer.html");
       });
+
+      // ########## new ##########
+      let first_new_bigImg = document.querySelector(".first-new .bigImg > img");
+      let first_new_thumbImg = document.querySelectorAll(".first-new .thumbImg > img");
+      for (let i = 0; i < first_new_thumbImg.length; i++) {
+        first_new_thumbImg[i].addEventListener('click', function () {
+          let basicSrc = first_new_bigImg.src;
+          let basicAlt = first_new_bigImg.alt;
+          first_new_bigImg.src = first_new_thumbImg[i].src;
+          first_new_bigImg.alt = first_new_thumbImg[i].alt;
+          first_new_thumbImg[i].src = basicSrc;
+          first_new_thumbImg[i].alt = basicAlt;
+          basicSrc = first_new_thumbImg[i].src;
+          basicAlt = first_new_thumbImg[i].alt;
+        })
+      }
+
+      let second_new_bigImg = document.querySelector(".second-new .bigImg > img");
+      let second_new_thumbImg = document.querySelectorAll(".second-new .thumbImg > img");
+      for (let i = 0; i < second_new_thumbImg.length; i++) {
+        second_new_thumbImg[i].addEventListener('click', function () {
+          let basicSrc =second_new_bigImg.src;
+          let basicAlt =second_new_bigImg.alt;
+          second_new_bigImg.src = second_new_thumbImg[i].src;
+          second_new_bigImg.alt = second_new_thumbImg[i].alt;
+          second_new_thumbImg[i].src = basicSrc;
+          second_new_thumbImg[i].alt = basicAlt;
+          basicSrc = second_new_thumbImg[i].src;
+          basicAlt = second_new_thumbImg[i].alt;
+        })
+      }
+
+
     </script>
     <script src="static/location.js"></script>
     <script src="static/store.js"></script>
