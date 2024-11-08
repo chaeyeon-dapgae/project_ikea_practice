@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikea subPage - Family</title>
+    <link rel="stylesheet" href="static/common.css" />
+    <link rel="stylesheet" href="static/family.css" />
+    <link rel="stylesheet" href="static/header.css" />
+    <link rel="stylesheet" href="static/footer.css" />
+    <!-- icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <!-- jquery CDN -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <div class="fsWrap">
+      <!-- ########## header ########## -->
+      <div id="headerWrap"></div>
+
+      <!-- ########## footer ########## -->
+      <div id="footerWrap"></div>
+    </div>
+    <!-- ########## script ########## -->
+    <script>
+      $(function () {
+        $("#headerWrap").load("includes/header.html");
+        $("#footerWrap").load("includes/footer.html");
+      });
+    </script>
+    <script src="static/location.js"></script>
+    <script src="static/store.js"></script>
+    <script src="static/new.js"></script>
+    <script src="static/product.js"></script>
+    <script src="static/main.js"></script>
+  </body>
+</html>
