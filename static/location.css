@@ -197,3 +197,52 @@
   background-color: #000;
   color: #fff;
 }
+/* ########## responsive ########## */
+@media (max-width: 1024px) {
+  /* ########## studio ########## */
+  .studio article .text a {
+    text-align: center;
+  }
+}
+@media (max-width: 920px) {
+  /* ########## studio ########## */
+  .studio header p {
+    width: 70%;
+  }
+  .studio article:hover .text {
+    top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  /* ########## main-location ########## */
+  .main-location main:after {
+    display: none;
+  }
+  /* ########## studio ########## */
+  .studio header p {
+    width: 100%;
+  }
+  .studio section {
+    flex-wrap: wrap;
+  }
+  .studio article {
+    width: 100%;
+  }
+  .studio article .text {
+    padding: 30px 10px;
+  }
+  /* ########## store-location ########## */
+  .store-location article {
+    width: 100%;
+  }
+  /* ########## lab ########## */
+  .lab section {
+    flex-wrap: wrap;
+  }
+  .lab article {
+    width: 100%;
+  }
+  .lab .text {
+    padding: 0;
+  }
+}
