@@ -1,38 +1,42 @@
 /* ########## main-location ########## */
 #main-location-wrap {
   background-color: #eef0ef;
-  margin-top: 80px;
-  position: relative;
+  padding-top: 80px;
   overflow: hidden;
 }
 .main-location main {
-  width: 70%;
-  margin: 0 auto;
+  text-align: center;
+  color: #4c5454;
+  position: relative;
+  margin-top: 50px;
+}
+.main-location main:after {
+  content: '';
+  position: absolute;
+  background: url('../img/location/pic08.png') no-repeat;
+  height: 328px;
+  width: 181px;
+  bottom: -100px;
+  left: 60%;
 }
 .main-location .text p {
   font-size: 24px;
 }
-.main-location .text h3 {
+.main-location .text h1 {
   font-size: 8em;
-  line-height: 0.7em;
-  position: absolute;
-  bottom: 0;
-  font-weight: 900;
+  line-height: 1em;
 }
 /* ########## studio ########## */
-.studio {}
 .studio header p {
   width: 55%;
   margin: 0 auto;
 }
 .studio section {
-  border: 1px solid #000;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 .studio article {
-  border: 1px solid #000;
   width: 50%;
   height: 350px;
   position: relative;
@@ -41,13 +45,12 @@
 .studio article img {
   width: 100%;
   height: 100%;
-
-  border: 1px solid #000;
+  object-fit: cover;
 }
 .studio article .text {
   color: #fff;
   background-color: #000;
-  padding: 20px;
+  padding: 30px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -58,8 +61,48 @@
 .studio article:hover .text {
   top: 70px;
 }
+.studio article .text h4 {
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+}
+.studio article:hover .text:hover h4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #555;
+}
+.studio article .text p {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+}
+.studio .business-hours {
+  margin-top: 20px;
+}
+.studio article .business-hours p {
+  margin-top: 0;
+}
+.studio .btnGroup {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.studio .btnGroup a {
+  background-color: transparent;
+  border: none;
+  padding: 5px 15px;
+  color: #fff;
+}
+.studio .btnGroup a:hover {
+  text-decoration: underline;
+}
 /* ########## store-location ########## */
-.store-location {}
 .store-location section {
   display: flex;
   flex-wrap: wrap;
@@ -68,18 +111,89 @@
 }
 .store-location article {
   width: calc((100% - 20px) / 2);
-  border: 1px solid #000;
 }
-/* ########## lab ########## */
-.lab {}
-.lab section {
+.store-location article img {
+  width: 100%;
+}
+.store-location article .text {
+  padding: 30px 0;
+}
+.store-location article .text h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.store-location .business-hours {
+  margin: 20px 0;
+}
+.store-location .btnGroup {
   display: flex;
   gap: 20px;
 }
-.lab article {
-  width: calc((100% - 20px) / 2);
+.store-location .btnGroup a {
+  background-color: #000;
+  width: 150px;
+  line-height: 30px;
+  color: #fff;
   border: 1px solid #000;
+  text-align: center;
+  border: 1px solid #000;
+  transition: 0.35s;
+}
+.store-location .btnGroup a:nth-child(2),
+.store-location .btnGroup a:nth-child(1):hover {
+  background-color: #fff;
+  color: #000;
+}
+.store-location .btnGroup a:nth-child(2):hover {
+  background-color: #000;
+  color: #fff;
+}
+/* ########## lab ########## */
+.lab section {
+  display: flex;
+  gap: 40px;
+}
+.lab article {
+  width: calc((100% - 40px) / 2);
 }
 .lab article img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lab .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+}
+.lab .name h4 {
+  font-size: 20px;
+}
+.lab article h5 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.lab .btnGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.lab .btnGroup a {
+  border: 1px solid #000;
+  width: 150px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  transition: 0.35s;
+}
+.lab .btnGroup a:nth-child(2),
+.lab .btnGroup a:nth-child(1):hover {
+  background-color: #fff;
+  color: #000;
+}
+.lab .btnGroup a:nth-child(2):hover {
+  background-color: #000;
+  color: #fff;
 }
