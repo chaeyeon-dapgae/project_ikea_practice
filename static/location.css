@@ -1,0 +1,85 @@
+/* ########## main-location ########## */
+#main-location-wrap {
+  background-color: #eef0ef;
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.main-location main {
+  width: 70%;
+  margin: 0 auto;
+}
+.main-location .text p {
+  font-size: 24px;
+}
+.main-location .text h3 {
+  font-size: 8em;
+  line-height: 0.7em;
+  position: absolute;
+  bottom: 0;
+  font-weight: 900;
+}
+/* ########## studio ########## */
+.studio {}
+.studio header p {
+  width: 55%;
+  margin: 0 auto;
+}
+.studio section {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.studio article {
+  border: 1px solid #000;
+  width: 50%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;;
+}
+.studio article img {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #000;
+}
+.studio article .text {
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(350px - 70px);
+  border-radius: 30px 30px 0 0;
+  transition: 0.35s;
+}
+.studio article:hover .text {
+  top: 70px;
+}
+/* ########## store-location ########## */
+.store-location {}
+.store-location section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.store-location article {
+  width: calc((100% - 20px) / 2);
+  border: 1px solid #000;
+}
+/* ########## lab ########## */
+.lab {}
+.lab section {
+  display: flex;
+  gap: 20px;
+}
+.lab article {
+  width: calc((100% - 20px) / 2);
+  border: 1px solid #000;
+}
+.lab article img {
+  width: 100%;
+}
