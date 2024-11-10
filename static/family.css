@@ -1,0 +1,177 @@
+/* ########## membership ##########*/
+#membershipWrap {
+  background-color: #DDD0C8;
+  padding-top: 80px;
+}
+.membership section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.membership img {
+  width: calc((100% - 20px) / 2);
+  height: 550px;
+  object-fit: cover;
+  object-position: top;
+}
+.membership .text {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.membership .text h1 {
+  font-size: 48px;
+  line-height: 1.4em;
+}
+.membership .text p {
+  margin-top: 30px;
+}
+.membership .text p:nth-of-type(2),
+.membership .text p ~ a {
+  font-weight: 700;
+  line-height: 30px;
+}
+.membership .btnGroup {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+.membership .btnGroup a {
+  text-transform: uppercase;
+  text-align: center;
+  width: 180px;
+  border: 1px solid #000;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  transition: 0.35s;
+}
+.membership .btnGroup a:nth-child(2) {
+  background-color: transparent;
+  color: #000;
+}
+.membership .btnGroup a:nth-child(1):hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+.membership .btnGroup a:nth-child(2):hover {
+  background-color: #000;
+  color: #fff;
+}
+/* ########## family ##########*/
+.family section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.family article {
+  width: calc((100% - (20px*2)) / 3);
+  height: 400px;
+  position: relative;
+}
+.family article:nth-child(1) {
+  background: url('../img/family/pic03.jpg') no-repeat center center / cover;
+}
+.family article:nth-child(2) {
+  background: url('../img/family/pic04.jpg') no-repeat center center / cover;
+}
+.family article:nth-child(3) {
+  background: url('../img/family/pic05.jpg') no-repeat center center / cover;
+}
+.family article h5 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 40px;
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 20px);
+  transform: translateX(-50%);
+  overflow: hidden;
+  clip-path: polygon(0% 0%, 5% 50%, 0% 100%, 100% 100%, 95% 50%, 100% 0%);
+}
+/* ########## banner-shinhanCard ##########*/
+#banner-shinhan-card-wrap {
+  background: url('../img/family/pic06.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+}
+.banner-shinhan-card h3 {
+  color: #fff;
+}
+.banner-shinhan-card section {
+  color: #fff;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.banner-shinhan-card section a {
+  margin-top: 30px;
+  color: #fff;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 130px;
+  line-height: 40px;
+  border-radius: 30px;
+  transition: 0.35s;
+}
+.banner-shinhan-card section a:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* ########## family ##########*/
+.shinhan-card header p {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.shinhan-card section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.shinhan-card article {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.shinhan-card article img {
+  width: 50%;
+}
+.shinhan-card article .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.shinhan-card .text h4 {
+  font-size: 24px;
+}
+.shinhan-card .btnGroup {
+  display: flex;
+  gap: 20px;
+}
+.shinhan-card .btnGroup a {
+  font-weight: 700;
+}
+.shinhan-card article:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.shinhan-card article:nth-child(2) .text {
+  text-align: right;
+}
+.shinhan-card article:nth-child(2) .btnGroup {
+  justify-content: end;
+}
+/* ########## tos(Terms of Use) ########## */
+.TOS p {
+  width: 60%;
+}
