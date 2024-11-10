@@ -36,6 +36,7 @@
   margin-top: 30px;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .membership .btnGroup a {
   text-transform: uppercase;
@@ -126,11 +127,10 @@
   background-color: #fff;
   color: #000;
 }
-/* ########## family ##########*/
+/* ########## shinhan-card ##########*/
 .shinhan-card header p {
   width: 60%;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 .shinhan-card section {
   display: flex;
@@ -174,4 +174,93 @@
 /* ########## tos(Terms of Use) ########## */
 .TOS p {
   width: 60%;
+}
+/* ########## responsive ########## */
+@media (max-width: 1024px) {
+  /* ########## family ##########*/
+  .family article h5 {
+    width: 90%;
+  }
+}
+@media (max-width: 920px) {
+  /* ########## membership ##########*/
+  .membership img {
+    width: 40%;
+  }
+  .membership .text {
+    width: 60%;
+  }
+  .membership .text h1 {
+    font-size: 32px;
+  }
+  /* ########## family ##########*/
+  .family section {
+    justify-content: center;
+    gap: 40px;
+  }
+  .family article {
+    width: 300px;
+  }
+  /* ########## shinhan-card ##########*/
+  .shinhan-card header p {
+    width: 90%;
+  }
+  .shinhan-card article .text {
+    padding: 0;
+  }
+  .shinhan-card .text h4,
+  .shinhan-card .text h5 {
+    font-size: 20px;
+  }
+  /* ########## tos(Terms of Use) ########## */
+  .TOS p {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  /* ########## family ##########*/
+  .membership section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .membership img {
+    width: 70%;
+  }
+  .membership .text {
+    width: 100%;
+  }
+  /* ########## banner-shinhanCard ##########*/
+  .banner-shinhan-card section {
+    width: 90%;
+  }
+  /* ########## shinhan-card ##########*/
+  .shinhan-card section {
+    gap: 60px;
+  }
+  .shinhan-card article {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .shinhan-card article .text {
+    width: 80%;
+    display: block;
+  }
+  .shinhan-card .text .discount,
+  .shinhan-card .btnGroup a {
+    margin-top: 20px;
+  }
+  .shinhan-card article:nth-child(2) {
+    flex-direction: row;
+  }
+  .shinhan-card article:nth-child(2) .text {
+    text-align: left;
+  }
+  .shinhan-card article:nth-child(2) .btnGroup {
+    justify-content: start;
+  }
+  /* ########## tos(Terms of Use) ########## */
+  .TOS p {
+    width: 100%;
+  }
 }
