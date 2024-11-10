@@ -218,7 +218,7 @@
   }
 }
 @media (max-width: 767px) {
-  /* ########## family ##########*/
+  /* ########## membership ##########*/
   .membership section {
     flex-wrap: wrap;
     justify-content: center;
@@ -226,6 +226,7 @@
   }
   .membership img {
     width: 70%;
+    height: 400px;
   }
   .membership .text {
     width: 100%;
@@ -261,6 +262,12 @@
   }
   /* ########## tos(Terms of Use) ########## */
   .TOS p {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  /* ########## membership ##########*/
+  .membership img {
     width: 100%;
   }
 }
